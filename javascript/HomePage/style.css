@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #b5838d;
+    font-size: 24px;
+    font-family: cursive;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 5px #725259;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+ul{
+    list-style-type: none;  
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    padding:14px 0px;
+}
+@media screen and (max-width:485px){
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* nav bar ends here */
+
+main{
+    margin-top: 80px;
+}
+section{
+    width: 75vw;
+    /* border: 1px solid #ccc; */
+    margin: 50px auto;
+    padding: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family:'Lucida Sans', Arial, sans-serif;
+}
+figure{
+    width: 300px;
+    margin: 10px;
+    /* border: 1px solid #ccc; */
+    padding: 7px;   
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+figure img{
+    width:250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+figcaption{
+    /* border: 1px solid palegoldenrod; */
+    margin: 6px auto;
+    padding: 7px;
+    width: 250px;
+    text-align: center;
+}
+h2{
+    color:rebeccapurple;
+    padding: auto;
+    font-size: 20px;
+    font-weight: lighter;
+}
+p{
+    color: darkmagenta;
+    font-size: 15px;
+}
+button{
+    border:1px solid rgb(210, 209, 209);
+    border-radius: 5px;
+    padding: 5px;
+}
+figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5ms ease-out;
+}
+figure img:hover{
+    box-shadow: 3px 0px 5px rgb(134, 168, 173);
+}
+button:hover{
+    background-color: #b5838d;
+    color: white;
+    border: 1px solid #b5838d;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
+    transition: ease-in;
+    transition-duration: 0.5ms;
+    cursor: pointer;
+}

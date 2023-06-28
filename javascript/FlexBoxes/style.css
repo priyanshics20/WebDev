@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+
+#container{
+    width: 75vw;
+    border: 2px solid black;
+    height: 450px;
+    margin: 40px auto;
+    background-color: lightslategrey;
+    display: flex;
+    /* flex-direction: column-reverse; */
+
+    /* default value of justify-content is flext-start */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+div{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+}

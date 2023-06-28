@@ -1,0 +1,28 @@
+section{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    animation:900ms ease-in infinite alternate gravity;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(160, 203, 218),rgb(41, 93, 94));
+    animation:5s linear infinite rotate;
+}
+@keyframes gravity{ 
+    100%{
+        transform: translateY(280px);
+        /* box-shadow: 0px 10px 2px rgb(7, 45, 58); */ 
+    }   
+}
+@keyframes rotate{
+    100%{
+        transform: rotateZ(360deg);
+
+    }
+}
