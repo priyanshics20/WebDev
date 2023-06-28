@@ -1,7 +1,6 @@
 const form = document.querySelector('form');
 const list = document.getElementById('list');
 function getMovies(searchText) {
-
     while (list.firstChild) {
         list.removeChild(list.firstChild);
     }
